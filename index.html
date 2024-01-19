@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password Validator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <input type="text" id="inputbox" placeholder="Enter Your Password">
+
+            <div class="status">
+                <!--If true >> "<ion-icon name="checkmark-circle-outline"></ion-icon>"  -->
+                <p>Status : </p><ion-icon id="valid" name="close-circle-outline"></ion-icon><p id="validText">Your Password Is Not Valid</p>
+            </div>
+            <div class="validation">
+                <!-- If true >> "<ion-icon name="checkmark"></ion-icon>"  -->
+
+                <p ><ion-icon id="a" name="close"></ion-icon>Your Password Should Be At Least 8 Characters Long</p>
+                <p ><ion-icon id="b" name="close"></ion-icon>Your Password Should Contain A Small Alphabet</p>
+                <p ><ion-icon id="c" name="close"></ion-icon>Your Password Should Contain A Capital Letter</p>
+                <p ><ion-icon id="d" name="close"></ion-icon>Your Password Should Contain A Number</p>
+                <p ><ion-icon id="e" name="close"></ion-icon>Your Password Should Contain A Special Character</p>
+                
+            </div>
+        </div>
+    </body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="script.js"></script>
+</html>
